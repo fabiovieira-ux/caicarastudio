@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Caiçara Studio — Arquitetura</title>
+<meta name="description" content="Caiçara Studio — arquitetura contemporânea enraizada na paisagem brasileira.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600&family=Jost:wght@300;400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<div class="preloader" id="preloader"><span>CAIÇARA STUDIO</span></div>
+
+<header class="site-header" id="siteHeader">
+  <div class="header-inner">
+    <a href="#top" class="logo">CAIÇARA<span>STUDIO</span></a>
+    <nav class="main-nav" id="mainNav">
+      <a href="#projetos">Projetos</a>
+      <a href="#escritorio">Escritório</a>
+      <a href="#processo">Processo</a>
+      <a href="#contato">Contato</a>
+    </nav>
+    <div class="header-right">
+      <a href="#contato" class="btn-ghost">Fale conosco</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-nav" id="mobileNav">
+  <nav>
+    <a href="#projetos">Projetos</a>
+    <a href="#escritorio">Escritório</a>
+    <a href="#processo">Processo</a>
+    <a href="#contato">Contato</a>
+  </nav>
+  <div class="mobile-nav-footer">
+    <p>Guarujá — São Paulo, Brasil</p>
+    <p>contato@caicarastudio.com.br</p>
+  </div>
+</div>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-media">
+      <img src="assets/img/projeto-gourmet-exterior.jpg" alt="Casa Boiçucanga — área gourmet integrada ao jardim" loading="eager">
+    </div>
+    <div class="hero-content">
+      <p class="eyebrow reveal">Arquitetura &amp; Paisagem</p>
+      <h1 class="reveal">Raízes na terra,<br>desenho no horizonte.</h1>
+    </div>
+    <a href="#manifesto" class="scroll-cue">
+      <span>Rolar</span>
+      <i></i>
+    </a>
+  </section>
+
+  <!-- MANIFESTO -->
+  <section class="manifesto" id="manifesto">
+    <div class="container split">
+      <p class="eyebrow reveal">Manifesto</p>
+      <h2 class="reveal">Projetamos casas e espaços que nascem do lugar — luz, vento, mata e mar conduzindo cada decisão antes do desenho.</h2>
+    </div>
+  </section>
+
+  <!-- PROJETOS -->
+  <section class="projects" id="projetos">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Projetos</p>
+        <h2>Trabalhos selecionados</h2>
+      </div>
+
+      <div class="filters reveal">
+        <button class="filter-btn active" data-filter="all">Todos</button>
+        <button class="filter-btn" data-filter="residencial">Residencial</button>
+        <button class="filter-btn" data-filter="comercial">Comercial</button>
+        <button class="filter-btn" data-filter="institucional">Institucional</button>
+        <button class="filter-btn" data-filter="interiores">Interiores</button>
+      </div>
+
+      <div class="project-grid" id="projectGrid">
+
+        <article class="project-card reveal" data-category="residencial">
+          <div class="project-img">
+            <img src="assets/img/projeto-gourmet-exterior.jpg" alt="Casa Boiçucanga — fachada da área gourmet">
+          </div>
+          <div class="project-info">
+            <h3>Casa Boiçucanga</h3>
+            <p>Residencial — Fachada, Boiçucanga, SP</p>
+          </div>
+        </article>
+
+        <article class="project-card reveal" data-category="residencial">
+          <div class="project-img">
+            <img src="assets/img/projeto-gourmet-jardim.jpg" alt="Casa Boiçucanga — área gourmet vista do jardim">
+          </div>
+          <div class="project-info">
+            <h3>Casa Boiçucanga</h3>
+            <p>Residencial — Jardim, Boiçucanga, SP</p>
+          </div>
+        </article>
+
+        <article class="project-card reveal" data-category="interiores">
+          <div class="project-img">
+            <img src="assets/img/projeto-gourmet-jantar.jpg" alt="Casa Boiçucanga — área gourmet, sala de jantar">
+          </div>
+          <div class="project-info">
+            <h3>Casa Boiçucanga</h3>
+            <p>Interiores — Área Gourmet, Boiçucanga, SP</p>
+          </div>
+        </article>
+
+        <article class="project-card reveal" data-category="institucional">
+          <div class="project-img">
+            <img src="assets/img/projeto-institucional-detalhe.jpg" alt="Centro Cultural Caiçara — detalhe da fachada em pedra">
+          </div>
+          <div class="project-info">
+            <h3>Centro Cultural Caiçara</h3>
+            <p>Institucional — Paraty, RJ</p>
+          </div>
+        </article>
+
+        <article class="project-card reveal" data-category="residencial">
+          <div class="project-img">
+            <img src="assets/img/projeto-residencia-render.jpg" alt="Residência Trapiche — fachada em madeira integrada à vegetação">
+          </div>
+          <div class="project-info">
+            <h3>Residência Trapiche</h3>
+            <p>Residencial — Ubatuba, SP</p>
+          </div>
+        </article>
+
+        <article class="project-card reveal" data-category="interiores">
+          <div class="project-img">
+            <img src="assets/img/projeto-banheiro-suite.jpg" alt="Casa Boiçucanga — banheiro da suíte master">
+          </div>
+          <div class="project-info">
+            <h3>Casa Boiçucanga</h3>
+            <p>Interiores — Suíte Master, Boiçucanga, SP</p>
+          </div>
+        </article>
+
+        <article class="project-card reveal" data-category="comercial">
+          <div class="project-img">
+            <img src="assets/img/projeto-comercial-fachada.jpg" alt="Edifício Corporativo Marejada — fachada urbana">
+          </div>
+          <div class="project-info">
+            <h3>Edifício Marejada</h3>
+            <p>Comercial — Santos, SP</p>
+          </div>
+        </article>
+
+        <article class="project-card reveal" data-category="interiores">
+          <div class="project-img">
+            <img src="assets/img/projeto-banheiro-master.jpg" alt="Casa Boiçucanga — lavabo social">
+          </div>
+          <div class="project-info">
+            <h3>Casa Boiçucanga</h3>
+            <p>Interiores — Lavabo Social, Boiçucanga, SP</p>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ESCRITÓRIO -->
+  <section class="studio" id="escritorio">
+    <div class="container split-2">
+      <div class="studio-img reveal">
+        <img src="assets/img/projeto-residencia-render.jpg" alt="Projeto Caiçara Studio — residência contemporânea em madeira">
+      </div>
+      <div class="studio-text reveal">
+        <p class="eyebrow">Escritório</p>
+        <h2>Feito por quem também vive da maré e da mata</h2>
+        <p>O Caiçara Studio nasceu na Baixada Santista, entre o mar e a Serra do Mar, com uma convicção simples: a boa arquitetura escuta o lugar antes de desenhar sobre ele. Há mais de doze anos desenvolvemos projetos residenciais, comerciais e institucionais que unem o repertório do modernismo brasileiro à sabedoria construtiva das comunidades caiçaras — madeira, pedra, palha e concreto aparente convivendo com naturalidade.</p>
+        <div class="stats">
+          <div class="stat">
+            <strong>12+</strong>
+            <span>anos de estúdio</span>
+          </div>
+          <div class="stat">
+            <strong>86</strong>
+            <span>projetos entregues</span>
+          </div>
+          <div class="stat">
+            <strong>40k</strong>
+            <span>m² construídos</span>
+          </div>
+          <div class="stat">
+            <strong>9</strong>
+            <span>prêmios nacionais</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESSO -->
+  <section class="process" id="processo">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Processo</p>
+        <h2>Como trabalhamos</h2>
+      </div>
+      <div class="process-grid">
+        <div class="process-step reveal">
+          <span class="step-num">01</span>
+          <h3>Escuta</h3>
+          <p>Visitamos o terreno, ouvimos a história da família ou do negócio e mapeamos clima, vento e vegetação antes de qualquer traço.</p>
+        </div>
+        <div class="process-step reveal">
+          <span class="step-num">02</span>
+          <h3>Conceito</h3>
+          <p>Estudos volumétricos e de implantação que testam a relação entre cheios, vazios e paisagem em cada orientação solar.</p>
+        </div>
+        <div class="process-step reveal">
+          <span class="step-num">03</span>
+          <h3>Projeto</h3>
+          <p>Detalhamento executivo, especificação de materiais regionais e acompanhamento de estrutura, instalações e paisagismo.</p>
+        </div>
+        <div class="process-step reveal">
+          <span class="step-num">04</span>
+          <h3>Obra</h3>
+          <p>Gestão de obra em campo, curadoria de fornecedores locais e entrega acompanhada até o último acabamento.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section class="contact" id="contato">
+    <div class="container split-2">
+      <div class="contact-text reveal">
+        <p class="eyebrow eyebrow-light">Contato</p>
+        <h2>Vamos desenhar seu próximo projeto</h2>
+        <p>Conte um pouco sobre o terreno, o programa e o prazo. Respondemos em até dois dias úteis.</p>
+        <ul class="contact-info">
+          <li><span>Endereço</span>Av. Marginal, 480 — Guarujá, SP</li>
+          <li><span>Telefone</span>+55 (13) 99123-4567</li>
+          <li><span>E-mail</span>contato@caicarastudio.com.br</li>
+        </ul>
+        <div class="socials">
+          <a href="#" aria-label="Instagram">Instagram</a>
+          <a href="#" aria-label="Pinterest">Pinterest</a>
+          <a href="#" aria-label="LinkedIn">LinkedIn</a>
+        </div>
+      </div>
+      <form class="contact-form reveal" id="contactForm">
+        <div class="form-row">
+          <label for="name">Nome</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-row">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-row">
+          <label for="phone">Telefone</label>
+          <input type="tel" id="phone" name="phone">
+        </div>
+        <div class="form-row">
+          <label for="message">Mensagem</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+        </div>
+        <button type="submit" class="btn-solid">Enviar mensagem</button>
+        <p class="form-note" id="formNote"></p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <a href="#top" class="logo">CAIÇARA<span>STUDIO</span></a>
+    <nav class="footer-nav">
+      <a href="#projetos">Projetos</a>
+      <a href="#escritorio">Escritório</a>
+      <a href="#processo">Processo</a>
+      <a href="#contato">Contato</a>
+    </nav>
+    <p class="copyright">© <span id="year"></span> Caiçara Studio. Todos os direitos reservados.</p>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
