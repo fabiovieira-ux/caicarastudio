@@ -527,7 +527,37 @@ h1, h2, h3 {
   transition: color var(--transition);
 }
 .footer-nav a:hover { color: var(--color-bg); }
-.copyright { font-size: 12.5px; }
+.footer-contact {
+  font-size: 12.5px;
+  line-height: 1.7;
+  color: #a8a196;
+}
+.copyright { font-size: 12.5px; width: 100%; padding-top: 8px; border-top: 1px solid var(--color-line-light); }
+
+/* ---------- WhatsApp floating button ---------- */
+.whatsapp-btn {
+  position: fixed;
+  right: 28px;
+  bottom: 28px;
+  z-index: 600;
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  background: #25d366;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.25);
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+.whatsapp-btn svg { width: 30px; height: 30px; }
+.whatsapp-btn:hover { transform: scale(1.08); box-shadow: 0 10px 28px rgba(0,0,0,0.32); }
+
+@media (max-width: 620px) {
+  .whatsapp-btn { right: 18px; bottom: 18px; width: 52px; height: 52px; }
+  .whatsapp-btn svg { width: 26px; height: 26px; }
+}
 
 /* ---------- Reveal animation ---------- */
 .reveal {
