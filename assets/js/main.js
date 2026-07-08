@@ -51,7 +51,8 @@ document.addEventListener("DOMContentLoaded", () => {
       btn.classList.add("active");
       const filter = btn.dataset.filter;
       projectCards.forEach(card => {
-        const match = filter === "all" || card.dataset.category === filter;
+        const categories = (card.dataset.category || "").split(" ");
+        const match = filter === "all" || categories.includes(filter);
         card.classList.toggle("hidden-card", !match);
       });
     });
@@ -60,13 +61,16 @@ document.addEventListener("DOMContentLoaded", () => {
   // Contact form (no backend — local confirmation only)
   const form = document.getElementById("contactForm");
   const formNote = document.getElementById("formNote");
-  form.addEventListener("submit", (e) => {
-    e.preventDefault();
-    formNote.textContent = "Mensagem recebida. Nossa equipe entrará em contato em breve.";
-    form.reset();
-  });
+  if (form) {
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+      formNote.textContent = "Mensagem recebida. Nossa equipe entrará em contato em breve.";
+      form.reset();
+    });
+  }
 
   // Footer year
-  document.getElementById("year").textContent = new Date().getFullYear();
+  const yearEl = document.getElementById("year");
+  if (yearEl) yearEl.textContent = new Date().getFullYear();
 
 });
